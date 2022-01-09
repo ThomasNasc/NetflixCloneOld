@@ -1,0 +1,121 @@
+:root {
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    height: 800px;
+}
+
+.logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+main {
+    height: 100%;
+}
+
+.MenuOptions {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.MenuOptions:hover {
+    color: #fff
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url(/img/origem-capa.jpeg);
+    height: 70%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sinopse {
+    margin-bottom: 40px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s ease all;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filmes {
+    display: block;
+    height: 100%;
+}
+
+.owl-carousel {
+    margin-top: 10px;
+}
+
+@media screen and (max-width:700px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .botao {
+        margin-top: 5px;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .sinopse {
+        width: 50%;
+    }
+}
